@@ -1,0 +1,4 @@
+2.py
+    dict3 = {**dict1,**dict2}
+4.py
+    list+dict1

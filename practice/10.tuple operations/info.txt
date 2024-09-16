@@ -1,0 +1,5 @@
+8.py
+  lambda
+    (sorted(tuple1, key = lambda x: x[1]))
+10.py
+    all(i == t[0] for i in t)

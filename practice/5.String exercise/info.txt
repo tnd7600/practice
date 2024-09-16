@@ -1,0 +1,35 @@
+15.py  
+    string module
+    translate
+    str.maketrans
+    string.punctuation
+
+    <==> string.punctuation: This is a predefined constant in the string module that 
+    contains all ASCII punctuation characters:- !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+
+Code <==> new_str = str1.translate(str.maketrans("", "", string.punctuation))
+        =>str.maketrans("", "", string.punctuation):
+
+            =>The str.maketrans() method is used to create a translation table.
+T           =>he first two arguments are empty strings (""), which means there is 
+            no character mapping (we're not replacing characters with other characters).
+            =>The third argument is string.punctuation, which means any character     
+            found in string.punctuation will be deleted (i.e., removed from the string).
+        =>str1.translate(...):
+
+            =>The translate() method applies the translation table created by str.maketrans() 
+            to the string str1. It will remove all punctuation characters found in 
+            string.punctuation from str1
+
+
+17.py
+    any() == function
+    code <==> (if any(char.isalpha() for char in word) and any(char.isdigit() for char in word):)
+        This condition checks two things for each word:
+
+            =>  any(char.isalpha() for char in word): This part checks if there is at least one 
+            alphabetic character in the word (char.isalpha() returns True if the character is
+            a letter).
+            =>  any(char.isdigit() for char in word): This part checks if there is at least 
+            one numeric character in the word (char.isdigit() returns True if the character
+            is a number).
